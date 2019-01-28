@@ -80,6 +80,15 @@ div {
   font-weight: 600;
 }
 
+#community{
+  transition: all .5s;
+  cursor: pointer;
+}
+
+#community:hover{
+  transform: scale(1.1) translateY(-3px)
+}
+
 @keyframes fadeInUp{
   0%{
     transform: translateY(20px);

@@ -22,7 +22,7 @@
         
         <div id="sub-title-container">
           <div class="sub-title">
-            <div class="sub-sub-title">Community</div>
+            <div class="sub-sub-title" id="community">Community</div>
           
             <div class="list">activities</div>
             <div class="list">artists</div>
@@ -63,4 +63,15 @@
 
     </div>
   </body>
+  <script>
+   var community = document.getElementById('community')
+   console.log(community)
+
+   var communityListener = function(){
+    console.log(this)     
+    this.style.opacity = 0
+   }
+
+   community.addEventListener('click', communityListener)
+  </script>
 </html>
